@@ -40,6 +40,7 @@ export const cancelLeaveAPI = (id) => API.delete(`/leaves/${id}`);
 export const getLeaveStatsAPI = () => API.get("/leaves/stats");
 
 // Users
+export const createUserAPI = (data) => API.post("/users", data);
 export const getAllUsersAPI = () => API.get("/users");
 export const getUserByIdAPI = (id) => API.get(`/users/${id}`);
 export const updateUserAPI = (id, data) => API.put(`/users/${id}`, data);
